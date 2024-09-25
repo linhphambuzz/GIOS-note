@@ -1,0 +1,11 @@
+- What is a [process](ProcessDefinition.md)? 
+	- Types of states
+- how are process represented by OS?
+	- [PCB](./ProcessControlBlock)
+	-[ Address space](./ProcessAddressSpace)
+- how are multiple concurrent processes managed by OS's?
+    - [Context Switch](./Context_Switch)
+    - [Process Creation](./ProcessLifeCycle)
+    - [Process Scheduling](./CPUSchedulerRole)
+
+- Process Management : [IPC](./InterProcessCommunication)
