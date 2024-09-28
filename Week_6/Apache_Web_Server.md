@@ -1,0 +1,4 @@
+![[Pasted image 20240926125722.png]]
+- The core component of the apache web server provides the core server functionality. This includes accepting requests, issuing responses, and managing concurrency. The various modules are mounted in a pipeline and extend the functionality of the basic server behavior. A specific apache deployment may contain one or more modules.
+- The flow of control is similar to the event driven model in that each request passes through all the modules, similar to how the request passed through all the handlers.
+- Apache is a combination of a multiprocess and multithreaded model. In apache, each instance is a process, which implements a multithreaded boss/workers configuration with a dynamic thread pool. The total number of processes can also be dynamically adjusted depending on - among other factors - the number of outstanding requests/pending connections.
