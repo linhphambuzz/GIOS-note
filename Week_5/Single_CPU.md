@@ -17,6 +17,6 @@ The library will maintain some user level thread data structure containing:
 
 If we want there to be multiple kernel level threads associated with this process, we don't want to have to replicate the entire process control block in each kernel level thread we have access to.
 
-The solution is to split the process control block into smaller structures. Namely, the stack and registers are broken out (since these will be different for different kernel level threads) and only these pieces of information are stored in the kernel level thread data structure.
+The solution is to split the process control block into smaller structures. Namely, the stack and registers are broken out (since these will be different for different kernel level threads) and only these pieces  of information are stored in the kernel level thread data structure.
 
 ![[Pasted image 20240917113532.png]]

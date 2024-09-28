@@ -3,7 +3,7 @@
 - The nice thing about this is that if there is a problem with the thread, the value at the index can provide meaningful info messages instead of the pointer just pointing to some corrupt memory.
 
 
-The thread data structure contains different fields for:
+The **thread data structure** contains different fields for:
 
 - execution context
 - registers

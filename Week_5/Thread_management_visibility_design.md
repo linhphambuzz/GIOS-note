@@ -30,7 +30,7 @@ The User-level library is part of the user's process, part of its addr space. Oc
 The control is passed to the user level library scheduler when:
 
 - ULTs explicitly yield
-- Timer set by the by UL library expires
+- Timer set by the UL library expires
 - Synchronization takes place: ULTs call library functions like lock/unlock
 - blocked threads become runnable
 

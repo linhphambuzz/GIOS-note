@@ -4,6 +4,7 @@
 ![[Pasted image 20240920151158.png]]
 - T1 holds the mutex and is executing on one CPU. T2 and T3 are blocked. T4 is executing on another CPU and wishes to lock the mutex.
 - The normal behavior would be to place T4 on the queue associated with the mutex. However, on a multiprocessor system where things can happen in parallel, it may be the case that by the time T4 is placed on the queue, T1 has released the mutex
+## Adaptive Mutexes
 - If the critical section is very short, the more efficient case for T4 is not to block, **but just to spin** (trying to acquire the mutex in a loop).
 - If the critical section is long, it makes **more sense to block** (that is, be placed on a queue and retrieved at some later point in time). This is because it takes CPU cycles to spin, and we don't want to burn through cycles for a long time. 
 - Mutexes which sometimes block and sometimes spin are called **adaptive mutexes.** These only make sense on multiprocessor systems, since we only want to spin if the owner of the mutex is currently executing in parallel to us.

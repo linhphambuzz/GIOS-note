@@ -12,7 +12,7 @@ The kernel also maintains a light-weight process (LWP), which contains data that
 - system call arguments
 - resource usage info
 - signal masks
-
+ 
 The data contained in the LWP is similar to the data contained in the ULT, but the LWP is visible to the kernel. When the kernel needs to make scheduling decisions, they can look at the LWP to help make decisions.
 
 ## Kernel-level threads
