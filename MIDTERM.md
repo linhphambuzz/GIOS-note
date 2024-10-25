@@ -1,3 +1,10 @@
+-  What are the key roles of an operating system?[[DEFINITIONS]]
+- Can you make distinction between OS abstractions, mechanisms, policies? [[OS_ELEMENTS]]
+- What does the principle of separation of mechanism and policy mean? What does the principle optimize for the common case mean? [[OS_Design_Principle]]
+-   What happens during a user-kernel mode crossing? What are some of the reasons why user-kernel mode crossing happens? What is a kernel trap? Why does it happen? What are the steps that take place during a kernel trap?[[USER_KERNEL_BOUNDARY]]  
+-   What is a system call? How does it happen? What are the steps that take place during a system call? [[SYSTEM_CALL]]
+- Contrast the design decisions and performance tradeoffs among monolithic, modular and microkernel-based OS designs. [[OS_types]]  [[Microkernel]]
+______________________________________________________________________
 - Process vs. Thread, Thread ctx switch [[Threads]]
 - Process ctx switch [[Context_Switch]] 
 - Life time of Process [[ProcessLifeCycle]]
@@ -8,3 +15,7 @@
 - When is it useful to add more threads, when does adding threads lead to pure overhead? 
 - Describe the boss-worked multithreading pattern. If you need to improve a performance metric like throughput or response time, what could you do in a boss-worker model? What are the limiting factors in improving performance with this pattern? [[Boss-Worker -pattern]]
 - Describe the pipelined multithreading pattern. If you need to improve a performance metric like throughput or response time, what could you do in a pipelined model? What are the limiting factors in improving performance with this pattern?[[Pipeline-Pattern]]
+- Contrast the pros-and-cons of a multithreaded (MT) and multiprocess (MP) implementation of a webserver, as described in the Flash paper [[Multithreaded_Webserver]]  [[MultiProcesses_Webserver]]
+- What are mutexes?  [[Mutexes]]  
+- What are condition variables? [[Condition_Variable]]
+- Can you quickly write the steps/code for entering/existing a critical section for problems such as reader/writer, reader/writer with selective priority (e.g., reader priority vs. writer priority)? [[Critical_Section]]

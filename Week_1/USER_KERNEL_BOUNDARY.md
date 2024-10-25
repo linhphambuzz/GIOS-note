@@ -1,4 +1,4 @@
-
+ 
 
 ![[Pasted image 20240822081617.png]]
 ## Privilege kernel mode 

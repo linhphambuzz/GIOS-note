@@ -1,4 +1,4 @@
-OS support a numbers of abstractions, and a numbers of mechanisms on top of these abstractions. 
+2OS support a numbers of abstractions, and a numbers of mechanisms on top of these abstractions. 
 
 ### Abstractions
 

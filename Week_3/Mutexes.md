@@ -1,4 +1,4 @@
-![[Pasted image 20240903095514.png]]
+ ![[Pasted image 20240903095514.png]]
 
 In the above picture: 
 - The snippet represents inserting a node with `value` and `ptr` to the list 

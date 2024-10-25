@@ -4,7 +4,7 @@
 - Abstract: to simplify what the hardware looks like 
 - Arbitration: to control the hardware use
 *Example:*
-- distributing memory between multiple processes: arbitration. OS system manages memory and determine how multiple processes will share 
+- distributing memory be tween multiple processes: arbitration. OS system manages memory and determine how multiple processes will share 
 - supporting different types of speakers: abstractions, plug one set in, if not compatible then another.
 - interchangeable access of hard disk or SSD: abstractions, the use of storage abstraction that the OS can support  --> they can underneath feel the different types of devices and hide that from the application 
 ## Role of OS

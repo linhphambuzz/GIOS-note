@@ -1,11 +1,11 @@
 We need some data structure to represent a thread
 The information we need to describe a thread may include:
-- Thread ID
-- Program counter
-- Stack pointer
-- Register values
-- Stack
-- Other attributes (priority attributes, etc.)
+	- Thread ID
+	- Program counter
+	- Stack pointer
+	- Register values
+	- Stack
+	- Other attributes (priority attributes, etc.)
 1. To create a thread
 - To create a thread, think of a `fork` (not the UNIX fork) call which takes two arguments: the `proc` to run when the thread is created, and the `args` to pass to `proc`
 - When one thread calls `fork(proc,args)` a new thread is created, with a new data structure and its program counter pointing to the first argument of `proc`. And these` args` will be available on the stack of the thread.  
