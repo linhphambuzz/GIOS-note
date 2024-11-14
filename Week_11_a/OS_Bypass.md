@@ -1,0 +1,10 @@
+- It is not necessary to go through the kernel to get to a device. It is possible to configure some devices to be accessible directly from user level. This is called **operating system bypass**. In OS bypass, any memory/registers assigned for use by the device is directly available to a user process.
+- The OS is involved in making the device registers available to the user process on create, but then is out of the way.
+- Since we don't want to interact with the kernel in order to control the device, we need a **user-level driver** - basically a library - that the user process links in order to interact with the device. These libraries, like the kernel-level drivers, will usually be provided by the device manufacturers.
+- The OS has to retain some coarse-grain control. For example, the OS can still enable/disable a device or add permissions to add more processes to use the device.
+- The OS relies of the device features to have sufficient registers -> OS can map some register to user process so that user process can perform some default functionalities like send/receive ->while still retaining access to a few registers itself so it can interact with the device at a high-level.
+- When the device needs to pass some data to one of the processes interacting with it, the device must figure out which process the data belongs to, and which process the device is targetting The device must perform some protocol functionality in order to **demultiplex** different chunks of data that belong to different processes.
+- ![[Pasted image 20241104174147.png]]
+- Normally, the kernel performs the demultiplexing, kernel is allocated per each process, but in OS bypass that responsibility is left to the device itself.
+
+## [](https://www.omscs-notes.com/operating-systems/io-management/#sync-vs-async-access)
